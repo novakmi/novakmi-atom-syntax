@@ -1,11 +1,15 @@
 {
   "name": "novakmi-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
-  "repository": "https://github.com/atom/novakmi-syntax",
+  "version": "0.2.0",
+  "description": "novakmi atom syntax - bold font, yellow background",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/novakmi/novakmi-atom-syntax.git",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.0.0 <2.0.0"
   }
 }

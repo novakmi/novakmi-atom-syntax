@@ -57,28 +57,19 @@
   }
 }
 
-.editor .search-results .marker .region {
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-.editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
 .comment {
   color: @light-gray;
-}
-
-.entity {
-  &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
-  }
-
-  &.other.inherited-class {
-    color: @green;
-  }
 }
 
 .keyword {
@@ -179,7 +170,7 @@
 
     &.bold {
       color: @light-orange;
-      font-style: bold;
+      font-weight: bold;
     }
 
     &.italic {
@@ -212,7 +203,14 @@
   &.name.function {
     color: @blue;
   }
+  &.name.type {
+    color: @light-orange;
+    text-decoration: underline;
+  }
 
+  &.other.inherited-class {
+    color: @green;
+  }
   &.name.class, &.name.type.class {
     color: @light-orange;
   }
@@ -265,7 +263,7 @@
 .markup {
   &.bold {
     color: @orange;
-    font-style: bold;
+    font-weight: bold;
   }
 
   &.changed {
@@ -309,6 +307,7 @@
   }
 }
 
-.editor.mini .scroll-view {
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
   padding-left: 1px;
 }
